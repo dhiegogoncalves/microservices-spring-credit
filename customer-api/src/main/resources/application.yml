@@ -1,9 +1,13 @@
 spring:
   application:
-    name: client-api
-
+    name: customer-api
 server:
   port: 0
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
+    include-exception: false
 
 eureka:
   client:
